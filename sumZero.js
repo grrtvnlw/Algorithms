@@ -5,9 +5,9 @@
 function sumZero(sortedArr) {
   let newArr = [];
 
-  for (let i = 0; i < sortedArr.length; i++) {
+  for (let i = 0; i < sortedArr.length - 1; i++) {
     let base = sortedArr[i];
-    for (let n = 1; n < sortedArr.length; n++) {
+    for (let n = i + 1; n < sortedArr.length; n++) {
       if (base + sortedArr[n] === 0) {
         newArr.push(base);
         newArr.push(sortedArr[n]);
@@ -17,6 +17,7 @@ function sumZero(sortedArr) {
   };
 };
 
-let sortedArr = [-3, -2, -1, 0, 3, 4, 4, 5]; // [-3, 3]
+// let sortedArr = [-2, -4, -1, 0, 3, 4, 4, 5]; // [-3, 3]
+let sortedArr = [-8, -3, -2, 0, 2, 4, 6, 8]; // [-8, 8]
 
 console.log(sumZero(sortedArr));
