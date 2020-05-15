@@ -1,3 +1,7 @@
+// Write a function called sumZero which accepts a sorted array of integers.
+// The function should find the first pair where the sum is 0.
+// Return an array that includes both values that sum to zero or undefined if the a pair does not exist.
+
 function sumZero(sortedArr) {
   let newArr = [];
 
@@ -8,9 +12,11 @@ function sumZero(sortedArr) {
         newArr.push(base);
         newArr.push(sortedArr[n]);
         return newArr;
+      } else {
+        return undefined;
       }; 
     };
   };
 };
-let sortedArr = [-4, -3, -1, 0, 3, 4, 4, 5]; // [-3, 3]
+let sortedArr = [-2, -1, 0, 3, 4, 4, 5]; // [-3, 3]
 console.log(sumZero(sortedArr));
