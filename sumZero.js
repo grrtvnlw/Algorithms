@@ -12,11 +12,11 @@ function sumZero(sortedArr) {
         newArr.push(base);
         newArr.push(sortedArr[n]);
         return newArr;
-      } else {
-        return undefined;
-      }; 
+      };
     };
   };
 };
-let sortedArr = [-2, -1, 0, 3, 4, 4, 5]; // [-3, 3]
+
+let sortedArr = [-3, -2, -1, 0, 3, 4, 4, 5]; // [-3, 3]
+
 console.log(sumZero(sortedArr));
