@@ -11,9 +11,9 @@ function stocks(prices) {
   return maxProfit;
 }
 
-// let arr = [7,1,5,3,6,4];
-// let arr = [7,6,4,3,1];
 let arr = [7,1,5,3,6,4];
+// let arr = [7,6,4,3,1];
+// let arr = [7,1,5,3,6,4];
 // let arr = [1,2,3,4,5];
 
 console.log(stocks(arr));
