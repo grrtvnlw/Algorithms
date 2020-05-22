@@ -4,7 +4,7 @@ function stocks(arr) {
   let buy = 0
   let sell = 0
   for (let i = 0; i < arr.length; i++) {
-    for (let n = 1; n < arr.length; n++) {
+    for (let n = i + 1; n < arr.length; n++) {
       if (n > i) {
         difference = arr[n] - arr[i];
         if (difference > counter) {
