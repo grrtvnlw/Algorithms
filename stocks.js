@@ -9,8 +9,8 @@ function stocks(arr) {
         difference = arr[n] - arr[i];
         if (difference > counter) {
           counter = difference;
-          buy = arr[i] + 1;
-          sell = arr[n] - 1;
+          buy = i + 1;
+          sell = n + 1;
         } 
       }
     }
