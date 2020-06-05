@@ -27,13 +27,15 @@ function median(arr) {
 
   median = total / 2;
 
+  median = Math.round(median)
+
   return arr[median];
 }
 
 function mode(arr) {
   let numberCount = {};
-  let key = 0;
-  let value = 0;
+  let mode = 0;
+  let times = 0;
 
   arr.forEach(number => {
     if (numberCount[number] == null) {
@@ -42,13 +44,13 @@ function mode(arr) {
       numberCount[number]++;
     }
 
-    if (numberCount[number] > value) {
-      value = numberCount[number];
-      key = number;
+    if (numberCount[number] > times) {
+      times = numberCount[number];
+      mode = number;
     }
   });
 
-  return { key, value };
+  return { mode, times };
 }
 
 let array = [4, 3, 1, 2, 2, 7, 9, 14, 2, 27, 400, 9, 1, 8];
