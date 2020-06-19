@@ -1,16 +1,16 @@
 function mean(arr) {
-  let numsInArr = 0;
+  let numsInArr = arr.length;
   let total = 0;
   let mean = 0;
 
   arr.forEach(number => {
-    numsInArr++;
+    // numsInArr++;
     total += number;
   })
 
   mean = total / numsInArr;
 
-  return Math.round(mean);
+  return mean;
 }
 
 function median(arr) {
@@ -53,7 +53,7 @@ function mode(arr) {
   return { mode, times };
 }
 
-let array = [4, 3, 1, 2, 2, 7, 9, 14, 2, 27, 400, 9, 1, 8];
+let array = [4, 3, 1, 2, 2, 7, 9, 14, 2, 27, 400, 9, 1, 8, 10];
 console.log(mean(array));
 console.log(median(array));
 console.log(mode(array));
