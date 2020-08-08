@@ -5,9 +5,6 @@ function addUp(n) {
   return n * (n + 1) / 2
 }
 
-console.log(addUp(10))
-console.log(addUp(5))
-
 // Big O: O(n)
 function addUp(n) {
   let total = 0;
@@ -18,6 +15,3 @@ function addUp(n) {
 
   return total;
 }
-
-console.log(addUp(10))
-console.log(addUp(5))
