@@ -1,6 +1,6 @@
 // Given an input, add all the numbers from 1 to the input
 
-// Big O: O(f(n) = 1)
+// Big O: O(1)
 function addUp(n) {
   return n * (n + 1) / 2
 }
@@ -8,7 +8,7 @@ function addUp(n) {
 console.log(addUp(10))
 console.log(addUp(5))
 
-// Big O: O(f(n))
+// Big O: O(n)
 function addUp(n) {
   let total = 0;
 
