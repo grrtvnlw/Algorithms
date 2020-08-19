@@ -4,7 +4,7 @@ inp = int(input("How many Fibonacci numbers would you like to see? "))
 
 # create counter and number variables / need 2 number variables 
 counter = 0
-num_one = 0
+num_one = 1
 num_two = 1
 
 # counts the iterations of the loop from zero to input
