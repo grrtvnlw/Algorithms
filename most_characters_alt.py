@@ -2,7 +2,8 @@ inp = input('Give me a string: ')
 
 def most_characters(str):
   if len(str) == 0:
-    return 'Empty String'
+    # return 'Empty String'
+    print('Empty String')
     
   letter_count = 0
   letter = ''
