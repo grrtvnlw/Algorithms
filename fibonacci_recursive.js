@@ -36,16 +36,16 @@ const fibonacci = (function () {
 
     memo[x] = memo[x] || {};
 
-    if (n in memo) {
-      value = memo[n];
+    if (x in memo && n in memo[x]) {
+      value = memo[x][n];
     } else {
       if (n === 0 || n === 1) {
         value = n;
       } else {
-        value = f(n - 1) + f(n - 2);
+        value = f(x, n - 1) + f(x, n - 2);
       }
 
-      memo[n] = value;
+      memo[x][n] = value;
     }
 
     return value;
